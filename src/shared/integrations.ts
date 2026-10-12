@@ -248,6 +248,16 @@ export const INTEGRATION_TEMPLATES: IntegrationTemplate[] = [
     idSuggestion: 'github'
   },
   {
+    kind: 'github',
+    label: 'GitHub Issues',
+    baseUrl: 'https://api.github.com/repos/:owner/:repo/issues',
+    authType: 'github',
+    secretLabel: 'GitHub personal access token',
+    secretHelp: 'Create a fine-grained or classic PAT at github.com/settings/tokens with the repo scope (\"repo\" or \"public_repo\") so the agent can read issues and query the tracker.',
+    docsUrl: 'https://docs.github.com/rest/issues/issues',
+    idSuggestion: 'github-issues'
+  },
+  {
     kind: 'custom-rest',
     label: 'Custom REST API',
     baseUrl: '',
